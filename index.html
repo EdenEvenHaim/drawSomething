@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Draw Something</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="main.js"></script>
+</head>
+<body>
+    <button id="changeBackgroundBtn" onclick="changeBackground()">🌈</button>
+    <div id="container">
+        <button onclick="changeColor(`black`)">⬛</button>
+        <button onclick="changeColor(`brown`)">🟫</button>
+        <button onclick="changeColor(`blue`)">🟦</button>
+        <button onclick="changeColor(`red`)">🟥</button>
+        <button onclick="changeColor(`purple`)">🟪</button>
+        <button onclick="changeColor(`green`)">🟩</button>
+        <button onclick="changeColor(`yellow`)">🟨</button>
+        <button onclick="changeColor(`orange`)">🟧</button>
+        <button onclick="changeThickness(1)">1</button>
+        <button onclick="changeThickness(3)">2</button>
+        <button onclick="changeThickness(5)">3</button>
+        <button onclick="changeThickness(10)">4</button>
+        <button onclick="changeThickness(15)">5</button>
+        <button onclick="randomLetter()">Random Letter</button>
+        <button onclick="randomNumber()">Random Number</button>
+    </div>
+    <br>
+    <canvas id="myCanvas" width="900" height="470"
+        onmouseenter="mark()"
+        onmousedown="mark()"
+        onmousemove="paint(event)">
+    </canvas>
+    <button onclick="clearCanvas()">Clear</button>
+</body>
+</html>

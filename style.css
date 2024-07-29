@@ -1,0 +1,69 @@
+#myCanvas {
+    border: 2px solid blueviolet;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 15px;
+    background: linear-gradient(135deg, #ffc0cb, #fffacd, #ee82ee);
+    overflow: hidden;
+    position: relative;
+}
+
+button {
+    color: #ee82ee;
+    border: 1px solid plum;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4b4bc4;
+}
+
+#changeBackgroundBtn {
+    position: fixed;
+    right: 10px;
+    top: 20%;
+    transform: translateY(-50%);
+    background-color: #ff69b4;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#changeBackgroundBtn:hover {
+    background-color: #ff1493;
+    transform: scale(1.05);
+}
+
+#changeBackgroundBtn:active {
+    background-color: #db7093;
+}
+
+@media (max-width: 768px) {
+    body {
+        height: auto;
+        padding: 20px;
+        overflow: auto;
+    }
+
+    #myCanvas {
+        width: 100%;
+        height: auto;
+    }
+}
+
